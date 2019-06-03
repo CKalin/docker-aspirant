@@ -1,0 +1,52 @@
+---
+version: "2"
+
+services:
+  tsas-db:
+    image: mysql:5.6.43
+    container_name: tsas-db
+    command: mysqld --general-log=1 --general-log-file=/var/log/mysql/statements.log
+    environment:
+      MYSQL_ROOT_PASSWORD: Tru5t€d
+      MYSQL_DATABASE: first_db
+      MYSQL_USER: johndoe
+      MYSQL_PASSWORD: Tru5t€d
+    ports:
+      - "9306:3306"
+    volumes:
+      - ./databases/:/docker-entrypoint-initdb.d/
+  tsas-tools:
+    image: tsas-tools
+    build: tsas-tools
+    container_name: tsas-tools
+  tsas-web:
+    image: nginx
+    container_name: tsas-web
+    depends_on:
+      - tsas-wordpress
+      - tsas-php
+    ports:
+      - 9980:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./public_html:/var/www/
+  tsas-wordpress:
+    image: wordpress:4.9.5
+    container_name: tsas-wordpress
+    ports:
+      - 9981:80
+    links:
+      - tsas-db
+    depends_on: 
+      - tsas-db
+    environment: 
+       WORDPRESS_DB_HOST: tsas-db:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD: Tru5t€d
+       WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./wordpress:/var/www/html
+  tsas-php:
+    image: php:7-fpm
+    volumes:
+      - ./public_html:/var/www/
