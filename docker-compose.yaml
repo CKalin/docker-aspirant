@@ -37,9 +37,7 @@ services:
       - ./workspace:/root/
   tsas-wordpress:
     image: wordpress:4.9.5
-    container_name: tsas-wordpress
-    ports:
-      - 9981:80
+    container_name: tsas-wordpress    
     links:
       - tsas-db
     depends_on:
