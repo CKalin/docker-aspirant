@@ -19,12 +19,22 @@ You can also use tools you like, for sure.
 
 ## Nice to know:
 
+### Locations:
+
+- ./public_html => this directory is served by nginx. You can reach it through the nginx's address stated below.
+- ./workspace => Maps to the root directory of all possible containers, except database and php.
+- ./tsas-tools => nothing relevant for you, just keeps you served with tools.
+- ./wordpress => when booting the environment, this directory contains all wordpress stuff.
+- ./nginx => nginx configuration
+- ./databases => Basic database dumps, used during first creation of your docker container.
+
 ### Ports and Access to the containers:
-#### MySQL: 
-Port: 9306
-User: root
-Password: Tru5t€d
+####
+- Port: 9306
+- User: root
+- Password: Tru5t€d
 
 #### HTTP:
-http://localhost:9980
+- public_html address: http://localhost:9980
+- wordpress address: http://localhost:9980/wordpress
 
