@@ -27,6 +27,11 @@
             <li>When calling from your browser: <a target="_blank" href="http://localhost:9980/api/reviews.json">http://localhost:9980/api/reviews.json</a>
         </p>
       </div>
+      <div class="main-box">
+        You can use this box for Task 2!
+
+        <!-- insert PHP code here -->
+      </div>
     </main>
   </body>
 </html>
