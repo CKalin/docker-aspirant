@@ -22,7 +22,9 @@
         </p>
         <p>
           The Reviews API is hosted at:
-          <?php echo get_reviews_api_url(); ?>
+          <ul>
+            <li>When calling within PHP-Script: <a href="<?php echo get_reviews_api_url(); ?>"><?php echo get_reviews_api_url(); ?></a> or </li>
+            <li>When calling from your browser: <a href="http://localhost:9980/api/reviews.json">http://localhost:9980/api/reviews.json</a>
         </p>
       </div>
     </main>
