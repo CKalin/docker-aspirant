@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="sticky">
-      <a id="header-backlink" href="https://my.trustedshops.com/">
+      <a id="header-backlink" href="https://localhost:9980/">
         <div class="logo-wrapper">
           <div class="logo"></div>
         </div>
@@ -23,8 +23,8 @@
         <p>
           The Reviews API is hosted at:
           <ul>
-            <li>When calling within PHP-Script: <a href="<?php echo get_reviews_api_url(); ?>"><?php echo get_reviews_api_url(); ?></a> or </li>
-            <li>When calling from your browser: <a href="http://localhost:9980/api/reviews.json">http://localhost:9980/api/reviews.json</a>
+            <li>When calling within PHP-Script: <a target="_blank" href="<?php echo get_reviews_api_url(); ?>"><?php echo get_reviews_api_url(); ?></a> or </li>
+            <li>When calling from your browser: <a target="_blank" href="http://localhost:9980/api/reviews.json">http://localhost:9980/api/reviews.json</a>
         </p>
       </div>
     </main>
