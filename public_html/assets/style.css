@@ -9,3 +9,78 @@ header {
   left: 0;
   right: 0;
 }
+
+header .logo-wrapper {
+  background-color: #FFFFFF;
+  height: 69px;
+  width: 140px;
+  z-index: 100;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8px 15px 14px;
+}
+header .logo-wrapper .logo {
+  background-image: url(https://static.trustedshops.com/img/brand/e-trustedshops_black.svg);
+  height: 46px;
+  background-size: 110px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+a:visited, a:link, .text-link:visited, .text-link:link {
+  color: #2A5DB0;
+}
+
+a, a:visited, a:hover, a:link, .text-link {
+  text-decoration: none;
+}
+
+a, .text-link {
+  color: #2A5DB0;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  cursor: pointer;
+}
+
+header .speechbubble-end {
+  display: block;
+  -webkit-box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  background-color: #FFFFFF;
+  content: "\00a0";
+  height: 30px;
+  position: absolute;
+  top: 36px;
+  left: 50px;
+  -webkit-transform: rotate(-90deg) skew(-45deg);
+  transform: rotate(-90deg) skew(-45deg);
+  width: 35px;
+}
+
+main {
+  display:  block;  
+  max-width: 1440px;
+  margin: 120px auto;
+}
+
+.main-box {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 2px 4px 0 #B2B2B2;
+  box-shadow: 0 2px 4px 0 #B2B2B2;
+  border-radius: 4px;
+  margin: 9px;
+  padding: 12px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
