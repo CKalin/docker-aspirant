@@ -22,15 +22,21 @@ You can also use tools you like, for sure.
 
 ### Locations:
 
-- ./public_html => this directory is served by nginx. You can reach it through the nginx's address stated below.
-- ./workspace => Maps to the root directory of all possible containers, except database and php.
-- ./tsas-tools => nothing relevant for you, just keeps you served with tools.
-- ./wordpress => when booting the environment, this directory contains all wordpress stuff.
-- ./nginx => nginx configuration
-- ./databases => Basic database dumps, used during first creation of your docker container.
+- **./public_html** - This directory is served by nginx. You can reach it through the nginx's address stated below.
+  -  Save static files here (HTML, CSS, Images, other assets)
+  -  Save PHP files here.
+- **./workspace** - Maps to the /root/ home directory of all possible containers, except database and php.
+  - Save everything private here.
+- **./wordpress** - When booting the environment, this directory contains all wordpress stuff.
+  - Use it for wordpress development.
+
+Digging deeper:
+- **./.docker** - nothing relevant for you, just keeps you served with tools.
+- **./.docker/nginx** - nginx configuration
+- **./.docker/databases** - Basic database dumps, used during first creation of your docker container.
 
 ### Ports and Access to the containers:
-####
+#### Database
 - Port: 9306
 - User: root
 - Password: Tru5t€d
