@@ -20,6 +20,7 @@ services:
     image: tsas-tools
     build: .docker/tsas-tools
     container_name: tsas-tools
+    working_dir: /root/
     volumes:
       - ./workspace:/root/
       - ./public_html:/var/www/html

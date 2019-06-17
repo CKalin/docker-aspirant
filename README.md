@@ -15,10 +15,30 @@ To use tools and more, we provided you with some stuff here:
 
 ``` docker exec -it tsas-tools bash```
 
-This connects you to the shell of a docker-container, ready to use with NodeJS, Angular, PHP CLI, MySQL CLI and many more. 
+This connects you to the shell of a docker-container, ready to use with NodeJS, Angular, MySQL CLI and many more.
 You can also use tools you like, for sure.
 
 ## Nice to know:
+### Commands
+
+**Note:** The commands are only available inside the workspace directory, and relative to root:
+
+- Angular CLI: `docker exec -it tsas-tools ng`, and desired arguments, 
+
+  e.g. `docker exec -it tsas-tools ng new`
+- NodeJs: 
+   `docker exec -it tsas-tools node` and desired arguments.,
+
+  e.g. `docker exec -it tsas-tools node hello-world.js`
+
+- Grunt: `docker exec -it tsas-tools grunt` and desired arguments
+
+  e.g. `docker exec -it tsas-tools grunt default`
+
+- MySQL Client
+  `docker exec -it tsas-tools mysql` and desired arguments
+
+  e.g. `docker exec -it tsas-tools mysql -uroot -pTru5t€d -htsas-db`
 
 ### Locations:
 
@@ -41,6 +61,7 @@ Digging deeper:
 - User: root
 - Password: Tru5t€d
 
+  Connect with: `docker exec -it tsas-tools mysql -uroot -pTru5t€d -htsas-db`
 #### HTTP:
 - public_html address: http://localhost:9980
 - wordpress address: http://localhost:9980/wordpress
