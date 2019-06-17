@@ -56,6 +56,8 @@ You can also use tools you like, for sure.
 
         # Configure output for NGINX
         docker exec -w /root/mytask -it tsas-tools ng config "projects.mytask.architect.build.options.outputPath" "/var/www/html/mytask"
+        docker exec -w /root/mytask -it tsas-tools ng config "projects.mytask.architect.build.options.baseHref" "/mytask/"
+        docker exec -w /root/mytask -it tsas-tools ng config "projects.mytask.architect.build.options.deployUrl" "/mytask/"
 
         # Start build and watch source code
         docker exec -w /root/mytask -it tsas-tools yarn run build --watch

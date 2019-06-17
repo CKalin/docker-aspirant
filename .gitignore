@@ -1,6 +1,13 @@
 wordpress/*
 !wordpress/wp-config.php
 
+public_html/*
+!public-html/api
+!public-html/assets
+!public-html/functions
+!public-html/index.php
+
+
 workspace/*
 !workspace/.gitkeep
 !workspace/hello-world.js
