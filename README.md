@@ -6,6 +6,7 @@ within you can do all tasks that you are commissioned with.
 ## Getting started
 
 1. First, install docker (and docker-compose, on linux environments)
+  - https://docs.docker.com/glossary/?term=installation
 2. Clone this repository where-ever you like to.
 3. Open a terminal and run `docker-compose up -d`
 4. You should now have a working environment, and can start working.
