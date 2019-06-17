@@ -3,3 +3,5 @@ wordpress/*
 
 workspace/*
 !workspace/.gitkeep
+!workspace/hello-world.js
+!workspace/.angular-config.json

@@ -21,6 +21,8 @@ services:
     build: .docker/tsas-tools
     container_name: tsas-tools
     working_dir: /root/
+    ports:
+      - 4200:4200
     volumes:
       - ./workspace:/root/
       - ./public_html:/var/www/html

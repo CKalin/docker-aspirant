@@ -47,6 +47,20 @@ You can also use tools you like, for sure.
   -  Save PHP files here.
 - **./workspace** - Maps to the /root/ home directory of all possible containers, except database and php.
   - Save everything private here.
+  - You can write node.js apps here, and run it with `docker exec -it tsas-tools node [MYFILE]`
+  - You can create angular-apps in here (**change mytask to whatever name you like**):
+      - Setup the project
+        ```
+        # Create
+        docker exec -it tsas-tools ng new --name mytask --routing --style scss --skip-tests --skip-git
+
+        # Configure output for NGINX
+        docker exec -w /root/mytask -it tsas-tools ng config "projects.mytask.architect.build.options.outputPath" "/var/www/html/mytask"
+
+        # Start build and watch source code
+        docker exec -w /root/mytask -it tsas-tools yarn run build --watch
+        ```
+      - http://localhost:9980/mytask
 - **./wordpress** - When booting the environment, this directory contains all wordpress stuff.
   - Use it for wordpress development.
 
