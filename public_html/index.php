@@ -15,6 +15,8 @@
     </header>
     <main>
       <div class="main-box">
+        <h1>You did it!</h1>
+        <h2>You successfully set up your docker environment \o/</h2>
         This is a blank page! But you can use the public_html folder to serve static files like single-page apps or whatever else you want.
 
         <p>
@@ -28,6 +30,7 @@
         </p>
       </div>
       <div class="main-box">
+        <h1>Reviews List</h2>
         You can use this box for Task 2!
 
         <!-- insert PHP code here -->
