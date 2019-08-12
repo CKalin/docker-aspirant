@@ -12,7 +12,7 @@ services:
       MYSQL_USER: johndoe
       MYSQL_PASSWORD: Tru5t€d
     ports:
-      - "9306:3306"
+      - "9307:3306"
     volumes:
       - ./.docker/databases/:/docker-entrypoint-initdb.d/
       - ./workspace:/root/

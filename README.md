@@ -73,7 +73,7 @@ Digging deeper:
 
 ### Ports and Access to the containers:
 #### Database
-- Port: 9306
+- Port: 9307
 - User: root
 - Password: Tru5t€d
 
