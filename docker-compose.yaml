@@ -8,7 +8,7 @@ services:
     command: mysqld --general-log=1 --general-log-file=/var/log/mysql/statements.log
     environment:
       MYSQL_ROOT_PASSWORD: Tru5t€d
-      MYSQL_DATABASE: first_db
+      MYSQL_DATABASE: company
       MYSQL_USER: johndoe
       MYSQL_PASSWORD: Tru5t€d
     ports:
