@@ -1,0 +1,6 @@
+<h1 style="margin-top: 3em;" class="ui center aligned header">Review Table</h1>
+<div class="ui container">
+  <button (click)="toggleTableBackground()" class="ui button">Toggle Table Background</button>
+  <button (click)="reloadReviews()" class="ui button">Reload</button>
+  <review-table [reviews]="reviews" class="highlight" [class.reverse]="isTableBackgroundReverse"></review-table>
+</div>

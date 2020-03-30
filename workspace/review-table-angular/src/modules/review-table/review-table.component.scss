@@ -1,0 +1,14 @@
+:host {
+  margin-top: 1em;
+  display: block;
+
+  &.highlight {
+    &:not(.reverse) tr:nth-child(even) td {
+      background-color: #F5F5F5;
+    }
+
+    &.reverse tr:nth-child(odd) td {
+      background-color: #F5F5F5;
+    }
+  }
+}

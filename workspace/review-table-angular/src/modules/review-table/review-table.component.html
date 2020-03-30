@@ -1,0 +1,19 @@
+<table class="ui table">
+  <thead>
+  <tr>
+    <th>Mark Description</th>
+    <th>Comment</th>
+    <th>Creation Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let review of reviews">
+    <td>{{review.markDescription}}</td>
+    <td>{{review.comment}}</td>
+    <td>{{review.creationDate | date: 'medium'}}</td>
+  </tr>
+  <tr *ngIf="!reviews?.length">
+    <td colspan=3>No data loaded yet.</td>
+  </tr>
+  </tbody>
+</table>
