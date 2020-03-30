@@ -4,11 +4,13 @@ wordpress/*
 public_html/*
 !public-html/api
 !public-html/assets
-!public-html/functions
+!public-html/functions/*
+!public-html/review-table-js/*
+!public-html/review-table-php/*
 !public-html/index.php
-
 
 workspace/*
 !workspace/.gitkeep
 !workspace/hello-world.js
 !workspace/.angular-config.json
+!workspace/review-table-angular/*
