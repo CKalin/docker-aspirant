@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></link>
+    <link rel="stylesheet" href="./table.css"></link>
+    <title>Review Table JS</title>
+    <script type="text/javascript" src="./table.js"></script>
+  </head>
+  <body onload="updateReviewsTable(byId('reviewRows'))">
+    <h1 style="margin-top: 3em;" class="ui center aligned header">Review Table</h1>
+    <div class="ui container">
+      <button onclick="toggleTableBackground(byId('table'))" class="ui button">Toggle Table Background</button>
+      <button onclick="updateReviewsTable(byId('reviewRows'))" class="ui button">Reload</button>
+      <table class="ui table highlight" id="table">
+        <thead>
+        <tr>
+          <th>Mark Description</th>
+          <th>Comment</th>
+          <th>Creation Date</th>
+        </tr>
+        </thead>
+        <tbody id="reviewRows">
+        <tr>
+          <td colspan=3>No data loaded yet.</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

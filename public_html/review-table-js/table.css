@@ -1,0 +1,6 @@
+.ui.table.highlight:not(.reverse) tr:nth-child(even) td {
+  background-color: #F5F5F5;
+}
+.ui.table.highlight.reverse tr:nth-child(odd) td {
+  background-color: #F5F5F5;
+}

@@ -2,15 +2,12 @@ wordpress/*
 !wordpress/wp-config.php
 
 public_html/*
-!public-html/api/
-!public-html/assets/
-!public-html/functions/
-!public-html/review-table-js/
-!public-html/review-table-php/
-!public-html/index.php
+!public_html/api/
+!public_html/assets/
+!public_html/crawler/
+!public_html/functions/
+!public_html/review-table-js/
+!public_html/review-table-php/
 
 workspace/*
-!workspace/.gitkeep
-!workspace/hello-world.js
-!workspace/.angular-config.json
 !workspace/review-table-angular/
